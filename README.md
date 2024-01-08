@@ -6,27 +6,27 @@
 
 # Folder Structure 
 
-Project Structure/
-└── weather_channel/
-    ├── apps/
-    │   ├── users/            ---   User Management Endpoints
-    │   │   ├── service.py    ---   Logic Methods
-    │   │   ├── schemas.py    ---   Request and Response Schemas
-    │   │   ├── router.py     ---   Endpoint Defintion
-    │   │   ├── exception.py  ---   App Level Exceptions
-    │   │   ├── test_.py      ---   App Level Test Cases
-    │   │   └── utils.py      ---   App Level Helpers 
-    │   └── weather
-    ├── constants/            ---   Project Level Constants     
-    ├── email_services/       ---   Email Functionality  
-    ├── migrations/           ---   Model Migration Files
-    ├── models/               ---   Model Definition
-    ├── security/             ---   Project Level Security
-    ├── settings/             ---   Project Level Settings
-    ├── static/               ---   Project Level Templates
-    ├── utils/                ---   Project Level Helpers
-    └── main.py               ---   Entry Point
-
+    -------------------------------------------------------------------------
+    | weather_channel/                                                      |
+    |    ├── apps/                                                          |
+    |    │   ├── users/            ---   User Management Endpoints          |
+    |    │   │   ├── service.py    ---   Logic Methods                      |
+    |    │   │   ├── schemas.py    ---   Request and Response Schemas       |
+    |    │   │   ├── router.py     ---   Endpoint Defintion                 |
+    |    │   │   ├── exception.py  ---   App Level Exceptions               |
+    |    │   │   ├── test_.py      ---   App Level Test Cases               |
+    |    │   │   └── utils.py      ---   App Level Helpers                  |
+    |    │   └── weather           ---   Weather Endpoints                  |
+    |    ├── constants/            ---   Project Level Constants            |
+    |    ├── email_services/       ---   Email Functionality                |
+    |    ├── migrations/           ---   Model Migration Files              |
+    |    ├── models/               ---   Model Definition                   |
+    |    ├── security/             ---   Project Level Security             |
+    |    ├── settings/             ---   Project Level Settings             |
+    |    ├── static/               ---   Project Level Templates            |
+    |    ├── utils/                ---   Project Level Helpers              |
+    |    └── main.py               ---   Entry Point                        |
+    -------------------------------------------------------------------------
 
 # Create a Virtual Environment 
     
@@ -65,7 +65,6 @@ Project Structure/
     ----------------------------------------------
     | pytest                                     |
     ----------------------------------------------
-
 
 
 
