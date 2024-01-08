@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+</style>
+</head>
+
+<body>
+<div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;line-height:2">
+    <div style="margin:50px auto;width:70%;padding:20px 0">
+      <div style="border-bottom:1px solid #eee">
+        <a href="" style="font-size:1.4em;color: #00466a;text-decoration:none;font-weight:600">Weather Channel</a>
+      </div>
+      <p style="font-size:1.1em">Hi, {{first_name}}</p>
+      <p style="align-text:center;">Please check your Saved Location Weather Information Below.</p>
+      
+      <table>
+        <tr>
+          <th>Location</th>
+          <th>Celsius Temperature</th>
+          <th>Fahrenheit Temperature</th>
+        </tr>
+
+        {% for location_weather_information in location_weather_informations %}
+        <tr>
+          <th> {{ location_weather_information.location }}</th>
+          <th> {{ location_weather_information.temp_c }}</th>
+          <th> {{ location_weather_information.temp_f }}</th>
+        </tr> 
+        {% endfor %}
+        </table>
+
+      <p style="font-size:0.9em;">Regards,<br />Weather Channel Admin</p>
+      <hr style="border:none;border-top:1px solid #eee" />
+      
+    </div>
+  </div>
+  
+
+
+</body>
+</html>
+
+
+
+  
