@@ -41,23 +41,31 @@ Project Structure/
     | python3 install -r requirements.py         |
     ----------------------------------------------
     
-#  Run the server
-
-    ----------------------------------------------
-    | uvicorn main:app --reload                  |
-    ----------------------------------------------
-
 #  Create a PostgreSQL Database
 
     ----------------------------------------------
     | CREATE DATABASE <your_database_name>       |
     ----------------------------------------------
 
-#  Migrate the changes
+#  Make the Migration using Alembic
 
     ----------------------------------------------
     | alembic upgrade head                       |
     ----------------------------------------------
+
+
+#  Run the server
+
+    ----------------------------------------------
+    | uvicorn main:app --reload                  |
+    ----------------------------------------------
+
+#  Open a New Terminal and run the test cases 
+
+    ----------------------------------------------
+    | pytest                                     |
+    ----------------------------------------------
+
 
 
 
