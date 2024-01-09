@@ -55,36 +55,8 @@ EMAIL_NOT_EXISTS_EXCEPTION = (
 
 
 # --------------------------------- Password ------------------------------------
-
-INCORRECT_OLD_PASSWORD = (
-    status.HTTP_400_BAD_REQUEST,
-    StatusType.ERROR.value,
-    "Old password is not correct"
-)
-
-NEW_PASSWORD_SAME_AS_OLD_PASSWORD = (
-    status.HTTP_400_BAD_REQUEST,
-    StatusType.ERROR.value,
-    "New Password should not be same as old password"
-)
-
 INVALID_PASSWORD_LENGTH_EXCEPTION = (
     status.HTTP_400_BAD_REQUEST,
     StatusType.ERROR.value,
     "Password length must be {} or more"
 )
-
-
-INVALID_NUMBER_LENGTH_EXCEPTION = (
-    status.HTTP_400_BAD_REQUEST,
-    StatusType.ERROR.value,
-    "Number length must be {}"
-)
-
-
-NUMBER_SHOULD_BE_NUMERIC = (
-    status.HTTP_400_BAD_REQUEST,
-    StatusType.ERROR.value,
-    "Number should not contain any characters"
-)
-

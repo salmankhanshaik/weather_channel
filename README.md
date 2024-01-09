@@ -30,42 +30,41 @@
 
 # Create a Virtual Environment 
     
-    ----------------------------------------------
-    | python3 -m venv <name_of_your_environment> |
-    ----------------------------------------------
+    
+      python3 -m venv <name_of_your_environment>  
+    
 
 #  Activate the Virtual Environment 
-#  Install  all the Dependencies
 
-    ----------------------------------------------
-    | python3 install -r requirements.py         |
-    ----------------------------------------------
+      source <name_of_your_environment>/bin/activate
+
+
+#  Install all the Dependencies
+
+    
+      python3 install -r requirements.py          
+    
     
 #  Create a PostgreSQL Database
 
-    ----------------------------------------------
-    | CREATE DATABASE <your_database_name>       |
-    ----------------------------------------------
+    
+      CREATE DATABASE <your_database_name>        
+    
 
 #  Make the Migration using Alembic
 
-    ----------------------------------------------
-    | alembic upgrade head                       |
-    ----------------------------------------------
+    
+      alembic upgrade head                        
+    
 
 
 #  Run the server
 
-    ----------------------------------------------
-    | uvicorn main:app --reload                  |
-    ----------------------------------------------
+    
+      uvicorn main:app --reload                   
+    
 
 #  Open a New Terminal and run the test cases 
 
-    ----------------------------------------------
-    | pytest                                     |
-    ----------------------------------------------
-
-
-
-
+    
+      pytest                                      
